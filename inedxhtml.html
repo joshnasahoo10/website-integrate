@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="sectionhome">
+        <div class="home-bg-container d-flex flex-column justify-content-end">
+            <div class="card">
+                <div class="h-center">
+                    <h1 class="heading">Tourism</h1>
+                    <p class="paragraph">plane your trip wherever you want to go</p>
+                    <button class="btn btn-success" onclick="display('sectionfavoriteplace')">
+                        Get started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionfavoriteplace">
+        <div class="favorite-place-bg-container d-flex flex-column justify-content-start">
+            <h1 class="favorite-place-heading">Favorite places</h1>
+            <div class="favorite-place-card-container d-flex flex-row" onclick="display('sectiontajmahaldetailed')">
+                <div>
+                    <h1 class="favorite-place-card-heading">Taj Mahal</h1>
+                    <p>Taj Mahal, mausoleum complex in Uttar Pradesh in northern India, built by the Mughal emperor Shah Jahan in the 17th century.</p>
+                </div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-img.png" class="taj-mahal-image" />
+            </div>
+            <div class="favorite-place-card-container d-flex flex-row" onclick="display('sectionkedarnathdetailed')">
+                <div>
+                    <h1 class="favorite-place-card-heading">Kedarnath</h1>
+                    <p>The Kedarnath temple, dedicated to Lord Shiva, is a part of Char Dham pilgrimage circuit, and is one of the 12 Jyotirlingas of Lord Shiva in India.</p>
+                </div>
+                <img src="https://img.freepik.com/premium-photo/kedarnath-temple_1048944-5432307.jpg?w=740" class="taj-mahal-image" />
+            </div>
+
+            <div class="favorite-place-card-container d-flex flex-row">
+                <div>
+                    <h1 class="favorite-place-card-heading">Jagannath Temple</h1>
+                    <p>Main temple dome of Jagannath Temple, a famous Hindu temple dedicated to Jagannath or Lord Vishnu in the coastal town of Puri.
+                    </p>
+                </div>
+                <img src="https://as1.ftcdn.net/v2/jpg/04/71/22/96/1000_F_471229696_gBayPOEBrWbvhTq0vig3mvo6t6UgIhuF.jpg" class="taj-mahal-image" />
+            </div>
+            <div class="favorite-place-card-container d-flex flex-row">
+                <div>
+                    <h1 class="favorite-place-card-heading">Thai Land</h1>
+                    <p>Thailand is in the heart of Southeast Asia. Cambodia and Laos border the country to the east and northeast, and Myanmar lies to the northwest.</p>
+                </div>
+                <img src="https://lh5.googleusercontent.com/p/AF1QipPOLJxDl9bQCp-ZWddNGBPo9K7eYeel7RtACke7=w540-h312-n-k-no" class="taj-mahal-image" />
+            </div>
+            <div class="favorite-place-card-container d-flex flex-row">
+                <div>
+                    <h1 class="favorite-place-card-heading">Lakshaweep</h1>
+                    <p>Settled off the Kerala coast on Laccadive sea, Lakshadweep translates to ‘a hundred thousand islands’. A club of 36 atolls and coral reefs, the nature tourism destination is known for preserved ecology and water sports.</p>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRS1KtHCHAuaGt6JUaX2ic4vAxyKZE4iEaePRR7HsoBhO-VIivSE23LQOVP2KM5UIRmPNuJZQ34eAKPPTeVUtEIdQO8C7LV2JSJrLxjWA" class="taj-mahal-image" />
+            </div>
+            <div class="favorite-place-card-container d-flex flex-row">
+                <div>
+                    <h1 class="favorite-place-card-heading">Goa</h1>
+                    <p>Goa is a state on the southwestern coast of India within the Konkan region, geographically separated from the Deccan highlands by the Western Ghats.</p>
+                </div>
+                <img src="https://www.shutterstock.com/shutterstock/photos/567247510/display_1500/stock-photo-beauty-arambol-beach-aerial-view-landscape-goa-state-in-india-567247510.jpg" class="taj-mahal-image" />
+            </div>
+            <div>
+                <button class="btn btn-dark" onclick="display('sectionhome')">
+                    back
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="sectiontajmahaldetailed">
+        <div class="taj-bg-container">
+            <h1 class="taj-bg-heading">Detailed View</h1>
+            <div class="taj-card-container">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/49HTIoCccDY?rel=0" allowfullscreen></iframe>
+                </div>
+                <div class="taj-text-card-container">
+                    <h1 class="taj-card-text">Taj Mahal</h1>
+                    <p class="taj-card-paragraph">The Taj Mahal is considered to be the greatest architectural achievement in the whole range of Indo-Islamic architecture. Its recognised architectonic beauty has a rhythmic combination of solids and voids, concave and convex and light shadow; such as arches and domes further increases the aesthetic aspect. Not a piece of architecture, as other buildings are, but the proud passions of an emperor’s love wrought in living stones.</p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionfavoriteplace')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionkedarnathdetailed">
+        <div class="siv-bg-container">
+            <h1 class="siv-bg-heading">Detailed View</h1>
+            <div class="siv-card-container">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cxlIUOMUrS4?rel=0" allowfullscreen></iframe>
+                </div>
+                <div class="siv-text-card-container">
+                    <h1 class="siv-card-text">Kedarnath</h1>
+                    <p class="siv-card-paragraph">The Kedarnath temple, dedicated to Lord Shiva, is a part of Char Dham pilgrimage circuit, and is one of the 12 Jyotirlingas of Lord Shiva in India.</p>
+                    <ul class="siv-card-paragraph unoder-list">
+                        <li>Kedarnath Temple</li>
+                        <li>Adi Shankaracharya Samadhi</li>
+                        <li>Sonprayag</li>
+                        <li>Gaurikund</li>
+                        <li>Chorbari Lake</li>
+                    </ul>
+
+
+
+
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionfavoriteplace')">
+                back
+            </button>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js">
+    </script>
+</body>
+
+</html>
